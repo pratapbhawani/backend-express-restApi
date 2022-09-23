@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <form action="/register" method="post">
+        <div class="register-container">
+            <div class="register-navbar">
+                <span>Registration</span><span>Login</span>
+            </div>
+            <h2 class="register-heading">Employee Registration Form</h2>
+            <div class="register-form">
+                <div class="register-name">
+                    <input type="text" name="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" placeholder="Last Name">
+                </div>
+                <div class="register-email">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </div>
+                <div class="register-phone">
+                    <input type="text" name="phone" placeholder="Your Phone">
+                    <input type="number" name="age" placeholder="Enter Your Age">
+                </div>
+                <div class="register-password">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="confirmpassword" placeholder="Confirm Password">
+                </div>
+                <div class="register-btn">
+                    <input type="submit" class="btnRegister" value="Register">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
